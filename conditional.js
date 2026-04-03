@@ -1,0 +1,102 @@
+// using && and ||
+let mood = 'sleepy';
+let tirednessLevel = 6;
+if (mood === 'sleepy' || tirednessLevel > 5){
+  console.log(!mood)
+}else{
+  console.log('not bedtime yet')
+}
+// if else
+let sale = true;
+sale = false;
+
+if(sale) {
+  console.log('Time to buy!');
+}else{
+  console.log('Time to wait for a sale.')
+}
+// comparison (< > <= >=)
+let hungerLevel = 7
+if (hungerLevel > 7){
+  console.log('Time to eat!')
+}else{
+  console.log('We can eat later!')
+}
+// truth and false
+let wordCount = 2;
+
+if (wordCount) {
+  console.log("Great! You've started your work!");
+} else {
+  console.log('Better get to work!');
+}
+
+// ini tu karena kosong jadi dia false , semua yang hasil nya kosong itu berarti masuk ke statement false
+let favoritePhrase = ''; 
+
+if (favoritePhrase) {
+  console.log("This string doesn't seem to be empty.");
+} else {
+  console.log('This string is definitely empty.');
+}
+
+// versi singkat true false di if else
+let isLocked = false;
+
+isLocked ? console.log('You will need a key to open the door.') : console.log('You will not need a key to open the door.');
+
+// if (isLocked) {
+//   console.log('You will need a key to open the door.');
+// } else {
+//   console.log('You will not need a key to open the door.');
+// }
+
+let isCorrect = true;
+isCorrect ? console.log('Correct!') : console.log('Incorrect!');
+
+// if (isCorrect) {
+//   console.log('Correct!');
+// } else {
+//   console.log('Incorrect!');
+// }
+
+let favoritePhraseIn = 'Love That!';
+favoritePhraseIn !== 'Love That!' ? console.log("I love that!") : console.log("I don't love that!");
+
+// if (favoritePhraseIn === 'Love That!') {
+//   console.log('I love that!');
+// } else {
+//   console.log("I don't love that!");
+// }
+
+// conditional else if
+let season = 'summer';
+
+if (season === 'spring') {
+  console.log('It\'s spring! The trees are budding!');
+} else if (season === 'winter'){
+  console.log('It\'s winter! Everything is covered in snow.');
+}else if (season === 'fall'){
+  console.log('It\'s fall! Leaves are falling!')
+}else if (season === 'summer'){
+  console.log('It\'s sunny and warm because it\'s summer!')
+}else{
+  console.log('Invalid value')
+}
+
+// switch
+let athleteFinalPosition = 'second place';
+switch (athleteFinalPosition){
+  case 'first place':
+    console.log('You get the gold medal!')
+  break;
+  case 'second place':
+    console.log('You get the silver medal!')
+  break;
+  case 'third place':
+    console.log('You get the bronze medal!')
+  break;
+  default:
+    console.log('No medal awarded.')
+  break;
+}
