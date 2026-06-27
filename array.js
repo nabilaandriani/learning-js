@@ -88,7 +88,36 @@ let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'ea
 secretMessage.splice([6], [5], 'know, ')
 console.log(secretMessage)
 
+/*pada array dapat dihapus menggunakan keyword delete. 
+Untuk menghapus data yang diinginkan, kita perlu mengetahui nilai indeksnya terlebih dahulu */
+let myArray = ['Android', 'Data Science', 'Web'];
+delete myArray[1];
+
+console.log(myArray); // Output: ['Android', <1 empty item>, 'Web']
+
 // metode join = untuk menjadikan array dalam bentuk kalimat
 let secretMessages = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
 // gunanya (' ') itu agar memisahkan tiap kata dengan spasi, kalo tidak pake itu maka akan dikasih koma bukan spasi
 console.log(secretMessage.join(' '))
+
+/* Array.from merupakan method untuk membuat array yang diperkenalkan di ES6. */
+const foo = Array.from('foo');
+console.log(foo); // Output: ['f', 'o', 'o'] 
+
+// Array.from juga dapat dimanfaatkan untuk menyalin array lainnya
+const users = new Array('John', 'Jane', 'Jack', 'Jill');
+const customer = Array.from(users);
+console.log(customer); // Output: ["John", "Jane", "Jack", "Jill"]
+
+/* Destructuring digunakan untuk melihat isi dari array. 
+Destructuring cukup mudah dilakukan yaitu dengan menggunakan kurung siku yang di dalamnya adalah nama variabel yang kita assign. 
+Kemudian diikuti dengan assignment operator sama dengan (=) dan array yang ingin diambil nilainya.*/
+const introduction = ['Hello', 'Arsy'];
+const [greeting, name] = introduction;
+console.log(greeting); // Output: Hello
+
+/* Sort adalah method yang digunakan untuk mengurutkan nilai array. 
+Array akan diurutkan berdasarkan abjad */
+const myArray = ['Web', 'Android', 'Data Science'];
+myArray.sort();
+console.log(myArray); // Output: [ 'Android', 'Data Science', 'Web' ]

@@ -16,7 +16,6 @@ for (let i = 0; i < vacationSpots.length; i++){
 }
 
 // jika ada string yang sama di variabel yang beda dan mau ambil string yang sama tersebut
-// Write your code below
 // ini kan ada string yang sama yaitu gegen dan nadia
 const bobsFollowers = ['nabila', 'cahya', 'gegen', 'nadia'];
 const tinasFollowers = ['rara', 'gegen', 'nadia'];
