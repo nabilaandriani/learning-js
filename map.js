@@ -35,3 +35,9 @@ console.log(map); // Map(1) { 'name' => 'aras' }
 /* Kembalian dari method delete akan bernilai true jika element tersedia atau berhasil dihapus. 
 Namun, kembaliannya juga dapat bernilai false jika element yang ingin dihapus tidak ada. */
 
+// array.map fungsinya mengembalikan array baru yang hasilnya adalah nilai dari pemanggilan fungsi pada setiap elemen array asli.
+const numbers = [1, 2, 3, 4];
+
+const doubled = numbers.map((num) => num * 2);
+
+console.log(doubled); // [2, 4, 6, 8]
